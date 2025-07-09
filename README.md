@@ -43,6 +43,8 @@
 
 
 ## News
+- [x] **`July 9, 2025`** We have released the MMReason testmini set. Check detailed results [here]()! More results will be provided soon!
+- [x] **`July 9, 2025`** MMReason has been accepted by **ICCV 2025**!
 - [x] **`July 1, 2025.`** We release our paper in [arxiv](https://arxiv.org/abs/2506.23563).
 
 
