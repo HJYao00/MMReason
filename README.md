@@ -2,13 +2,13 @@
 
 <h1> MMReason: An Open-Ended Multi-Modal Multi-Step Reasoning Benchmark for MLLMs Toward AGI </h1>
 
-<!--
+
 <h5 align="center"> If you find this project useful, please give us a star🌟.
 
 <h5 align="center"> 
--->
 
 <a href='https://arxiv.org/abs/2506.23563'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+<a href='https://huggingface.co/datasets/HuanjinYao/MMReason'><img src='https://img.shields.io/badge/Dataset-Huggingface-yellow'>
 <!--
 <a href='https://huggingface.co/HuanjinYao/Mulberry_llava_8b'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue'>
 <a href='https://huggingface.co/datasets/HuanjinYao/Mulberry-SFT'><img src='https://img.shields.io/badge/Dataset-Huggingface-yellow'>
@@ -43,9 +43,9 @@
 
 
 ## News
-- [x] **`July 9, 2025`** We have released the MMReason testmini set. Check detailed results [here]()! More results will be provided soon!
+- [x] **`July 9, 2025`** We have released the MMReason [testmini set](https://huggingface.co/datasets/HuanjinYao/MMReason). Check detailed results [here]()! More results will be provided soon!
 - [x] **`July 9, 2025`** MMReason has been accepted by **ICCV 2025**!
-- [x] **`July 1, 2025.`** We release our paper in [arxiv](https://arxiv.org/abs/2506.23563).
+- [x] **`July 1, 2025`** We release our paper in [arxiv](https://arxiv.org/abs/2506.23563).
 
 
 ## Citation
