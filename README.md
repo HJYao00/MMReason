@@ -42,18 +42,20 @@
 </div>
 
 
-## News
+## 🎙️ News
 - [x] **`July 9, 2025`** We have released the MMReason [testmini set](https://huggingface.co/datasets/HuanjinYao/MMReason). Check detailed results [here]()! More results will be provided soon!
 - [x] **`July 9, 2025`** MMReason has been accepted by **ICCV 2025**!
 - [x] **`July 1, 2025`** We release our paper in [arxiv](https://arxiv.org/abs/2506.23563).
 
+## 🌟 About MMReason
+
 ## 🏆 Leaderboard
 
 
-## 💻 Evaluations on MMReason
+## 🚀 Evaluations on MMReason
 
 
-## Citation
+## 🔗 Citation
 If you find this repository is useful, please star🌟 this repo and cite🖇️ our paper.
 ```bibtex
 @article{yao2025mmreason,
