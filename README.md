@@ -46,17 +46,12 @@
 - [x] **`July 1, 2025.`** We release our paper in [arxiv](https://arxiv.org/abs/2506.23563).
 
 
-<!--
 ## Citation
 If you find this repository is useful, please star🌟 this repo and cite🖇️ our paper.
 ```bibtex
-@misc{yao2025r1sharevl,
-      title={R1-ShareVL: Incentivizing Reasoning Capability of Multimodal Large Language Models via Share-GRPO}, 
-      author={Huanjin Yao and Qixiang Yin and Jingyi Zhang and Min Yang and Yibo Wang and Wenhao Wu and Fei Su and Li Shen and Minghui Qiu and Dacheng Tao and Jiaxing Huang},
-      year={2025},
-      eprint={2505.16673},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
+@article{yao2025mmreason,
+  title={MMReason: An Open-Ended Multi-Modal Multi-Step Reasoning Benchmark for MLLMs Toward AGI},
+  author={Yao, Huanjin and Huang, Jiaxing and Qiu, Yawen and Chen, Michael K and Liu, Wenzheng and Zhang, Wei and Zeng, Wenjie and Zhang, Xikun and Zhang, Jingyi and Song, Yuxin and others},
+  journal={arXiv preprint arXiv:2506.23563},
+  year={2025}
 }
-```
--->
