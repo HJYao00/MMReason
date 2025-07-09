@@ -47,11 +47,10 @@
 - [x] **`July 9, 2025`** MMReason has been accepted by **ICCV 2025**!
 - [x] **`July 1, 2025`** We release our paper in [arxiv](https://arxiv.org/abs/2506.23563).
 
-## Results
+## 🏆 Leaderboard
 
 
-## Evaluation
-
+## 💻 Evaluations on MMReason
 
 
 ## Citation
