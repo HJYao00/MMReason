@@ -49,6 +49,20 @@
 
 ## 🌟 About MMReason
 
+MMReason is a new open-ended, multi-modal, multi-step reasoning benchmark designed to precisely and comprehensively evaluate the long-chain reasoning capabilities of MLLMs. Existing benchmarks often fall short due to limited question diversity, vulnerability to guessability and memorization, and insufficient evaluation of intermediate reasoning steps.
+
+<div align=center>
+<img width="300" alt="image" src="figure/fig1.png">
+</div>
+
+MMReason addresses these gaps by curating diverse and challenging questions across six disciplines (Math, Business, Science, Engineering, Social Science, Health) and multiple difficulty levels, reformulating them into open-ended formats, and filtering out shortcut cases via a multi-model voting system. Additionally, a reference-based ternary scoring mechanism is used to assess intermediate reasoning steps as shown in below.
+<div align=center>
+<img width="450" alt="image" src="figure/fig3.png">
+</div>
+
+
+
+<!--
 ## 🏆 Leaderboard
 ### Leaderboard on the testmini subset
 Accuracy scores on the **testmini** subset (1,000 examples):
@@ -117,10 +131,20 @@ Accuracy scores on the **testmini** subset (1,000 examples):
 | 59    | **mPLUG-Owl (LLaMA-7B)**             | LMM 🖼️      | [Link](https://arxiv.org/abs/2310.02255)                     | 2023-10-03 | **22.2** | 22.7    | 23.6    | 10.2    | 27.2    | 27.9    | 23.6    | 19.2    | 23.9    | 13.5    | 12.7    | 26.3    | 21.4    |
 | 60    | **IDEFICS (9B-Instruct)**            | LMM 🖼️      | [Link](https://arxiv.org/abs/2310.02255)                     | 2023-10-03 | **19.8** | 21.6    | 21.1    | 6.5     | 25.9    | 24.0    | 22.1    | 15.0    | 19.8    | 18.9    | 9.9     | 24.6    | 18.1    |
 | 61    | **Random Chance**                    | -          | [Link](https://arxiv.org/abs/2310.02255)                     | 2023-10-03 | **17.9** | 15.5    | 24.1    | 4.5     | 23.4    | 24.3    | 25.8    | 13.8    | 22.7    | 13.4    | 8.8     | 15.8    | 14.3    |
-
+-->
 
 ## 🚀 Evaluations on MMReason
-
+You can run the following command to evaluate Qwen2.5-VL on MMReason!
+```bash
+python3 mmreason_eval.py \
+    --model_path 'Qwen2.5-VL-7B-Instruct' \
+    --output_path './output/mmreason_test_mini.xlsx' \
+    --tp_size 1 \
+    --input_path 'your_path_to/mmreason_test_mini.parquet' \
+    --use_vllm \
+    --api_key '' \
+    --api_base '' 
+```
 
 ## 🔗 Citation
 If you find this repository is useful, please star🌟 this repo and cite🖇️ our paper.
