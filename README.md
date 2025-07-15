@@ -64,27 +64,21 @@ MMReason addresses these gaps by curating diverse and challenging questions acro
 ## 📖 Dataset
 
 ### Dataset Source
-The **MMReason** benchmark is curated from xxxx, as well as 5 other source datasets (). 
-<!--
-Details can be found in the [source.json](https://huggingface.co/datasets/AI4Math/MathVista/blob/main/source.json) file. All these source datasets have been preprocessed and labeled for evaluation purposes.
--->
+The **MMReason** benchmark is curated from xxxx, as well as 6 other source datasets (i.e., MMMU, MMMU_Pro, MMStar, M3CoT, MatVerse, MathVision). 
 
 ### Data Downloading
 
 All the data examples were divided into two subsets: *testmini* and *test*.
 
 - **testmini**: 1,000 examples used for model development, validation, or for those with limited computing resources.
-
-<!--
-- **test**: 5,141 examples for standard evaluation. Notably, the answer labels for test will NOT be publicly released.
--->
+- **test**: 3,275 examples for standard evaluation. Notably, the answer labels for test will NOT be publicly released.
 
 You can download this dataset by the following command (make sure that you have installed [Huggingface Datasets](https://huggingface.co/docs/datasets/quickstart)):
 
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("AI4Math/MathVista")
+dataset = load_dataset("HuanjinYao/MMReason")
 ```
 
 Here are some examples of how to access the downloaded dataset:
@@ -92,18 +86,14 @@ Here are some examples of how to access the downloaded dataset:
 ```python
 # print the first example on the testmini set
 print(dataset["testmini"][0])
-print(dataset["testmini"][0]['pid']) # print the problem id 
-print(dataset["testmini"][0]['question']) # print the question text 
-print(dataset["testmini"][0]['query']) # print the query text
+print(dataset["testmini"][0]['idx']) # print the problem id 
+print(dataset["testmini"][0]['cot_question']) # print chain-of-thought question text (default input)
 print(dataset["testmini"][0]['image']) # print the image path
 print(dataset["testmini"][0]['answer']) # print the answer
-dataset["testmini"][0]['decoded_image'] # display the image
+print(dataset["testmini"][0]['question']) # print original question text
+print(dataset["testmini"][0]['discipline']) # print the discipline of the problem
 
-# print the first example on the test set
-print(dataset["test"][0])
 ```
-
-We have uploaded a demo to illustrate how to access the MathVista dataset on Hugging Face, available at [hugging_face_dataset_demo.ipynb](https://github.com/lupantech/MathVista/blob/main/jupyter_notebook_demos/hugging_face_dataset_demo.ipynb).
 
 
 <!--
@@ -178,7 +168,12 @@ Accuracy scores on the **testmini** subset (1,000 examples):
 -->
 
 ## 🚀 Evaluations on MMReason
-You can run the following command to evaluate Qwen2.5-VL on MMReason!
+
+### Requirements (Optional)
+
+We use GPT-4.1 for extraction and judgment, achieving more cost-effective and accurate evaluation. Please enter your OpenAI API key in the `api_key` field below.
+
+Then, you can run the following command to evaluate Qwen2.5-VL on MMReason!
 ```bash
 python3 mmreason_eval.py \
     --model_path 'Qwen2.5-VL-7B-Instruct' \
@@ -187,7 +182,7 @@ python3 mmreason_eval.py \
     --input_path 'your_path_to/mmreason_test_mini.parquet' \
     --use_vllm \
     --api_key '' \
-    --api_base '' 
+    --api_base 'https://api.openai.com/v1/chat/completions' 
 ```
 
 ## 🔗 Citation
@@ -202,4 +197,4 @@ If you find this repository is useful, please star🌟 this repo and cite🖇️
 ```
 
 ## 🙏 Acknowledgment
-We sincerely appreciate the contributions of MMMU, MMMU-Pro, M3CoT, MathVerse, and MathVision.
+We sincerely appreciate the contributions of MathVista, MMMU, MMMU-Pro, M3CoT, MMStar, MathVerse, and MathVision.
