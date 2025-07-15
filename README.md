@@ -64,7 +64,7 @@ MMReason addresses these gaps by curating diverse and challenging questions acro
 ## 📖 Dataset
 
 ### Dataset Source
-The **MMReason** benchmark is curated from xxxx, as well as 6 other source datasets (i.e., MMMU, MMMU_Pro, MMStar, M3CoT, MatVerse, MathVision). 
+The **MMReason** benchmark comprises foundational and competition-level questions spanning six disciplines, sourced from the Internet and six established datasets: MMMU, MMMU_Pro, MMStar, M3CoT, MathVerse, and MathVision.
 
 ### Data Downloading
 
