@@ -85,13 +85,13 @@ Here are some examples of how to access the downloaded dataset:
 
 ```python
 # print the first example on the testmini set
-print(dataset["testmini"][0])
-print(dataset["testmini"][0]['idx']) # print the problem id 
-print(dataset["testmini"][0]['cot_question']) # print chain-of-thought question text (default input)
-print(dataset["testmini"][0]['image']) # print the image path
-print(dataset["testmini"][0]['answer']) # print the answer
-print(dataset["testmini"][0]['question']) # print original question text
-print(dataset["testmini"][0]['discipline']) # print the discipline of the problem
+print(dataset["test"][0])
+print(dataset["test"][0]['idx']) # print the problem id 
+print(dataset["test"][0]['cot_question']) # print chain-of-thought question text (default input)
+print(dataset["test"][0]['image']) # print the image path
+print(dataset["test"][0]['answer']) # print the answer
+print(dataset["test"][0]['question']) # print original question text
+print(dataset["test"][0]['discipline']) # print the discipline of the problem
 
 ```
 
@@ -168,8 +168,6 @@ Accuracy scores on the **testmini** subset (1,000 examples):
 -->
 
 ## 🚀 Evaluations on MMReason
-
-### Requirements (Optional)
 
 We use GPT-4.1 for extraction and judgment, achieving more cost-effective and accurate evaluation. Please enter your OpenAI API key in the `api_key` field below.
 
