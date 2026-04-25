@@ -46,6 +46,19 @@
 - [x] **`July 1, 2025.`** We release our paper in [arxiv](https://arxiv.org/abs/2506.23563).
 
 
+## Evaluation
+
+MMReason has been integrated into [VLMEvalKit](https://github.com/open-compass/VLMEvalKit), a unified evaluation toolkit for vision-language models.
+
+To evaluate a model on the `MMReason_testmini` split, run:
+
+```bash
+git clone https://github.com/open-compass/VLMEvalKit.git
+cd VLMEvalKit
+python3 run.py --data MMReason_testmini --model Qwen3-VL-4B-Instruct --verbose
+```
+
+
 ## Citation
 If you find this repository is useful, please star🌟 this repo and cite🖇️ our paper.
 ```bibtex
